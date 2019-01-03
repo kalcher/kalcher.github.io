@@ -3,9 +3,6 @@ title: ska
 description: "some stuff"
 url: "https://kalcher.github.io"
 
-
-
-
 # Secondary Parameters
 baseurl: ""
 header-img: img/8E500263-CD6F-4FC8-BC1F-96F991419937.jpeg
@@ -17,7 +14,7 @@ github_username:  projectpages
 project_repository: project-pages
 disqus_shortname: project-pages
 g-analytics:
-altmetric: true
+altmetric: false
 
 # Build settings
 gems: [jekyll-paginate]
