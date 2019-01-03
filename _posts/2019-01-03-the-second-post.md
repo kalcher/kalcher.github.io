@@ -13,6 +13,7 @@ published: false
 title: The second post
 author: ska
 tags: post
+subtitle: Some more dummy content
 ---
 ## A New Post
 
