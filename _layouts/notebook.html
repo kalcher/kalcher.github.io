@@ -160,6 +160,10 @@ layout: default
 {% for cell in site.data[notebookadress].cells %}
 {% case cell.cell_type %}
 
+{% when 'stream' %}
+
+{{ cell.source }}		    
+		    
 {% when 'markdown' %}
 
 {{ cell.source }}
