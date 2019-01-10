@@ -172,9 +172,9 @@ layout: default
 
 {% for output in cell.outputs  %}
 
+{{ output.text }}
+	    
 {% for outputitem in output.data %}
-
-{{ cell.outputs.text }}
 		    
 {% if outputitem[0] contains "image/" %}
 <img src="data:{{outputitem[0]}};base64, {{ outputitem[1] }}">
