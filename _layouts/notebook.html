@@ -185,7 +185,9 @@ layout: default
 {% endif %}
 
 {% if outputitem[0] contains "text/plain" %}
+{% highlight plaintext %}
 {{ outputitem[1] }}
+{% endhighlight %}
 {% endif %}
 		    
 {% endfor %}
