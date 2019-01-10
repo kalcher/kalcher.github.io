@@ -172,17 +172,21 @@ layout: default
 
 {% for output in cell.outputs  %}
 
+{% if output.text %}
 {% highlight plaintext %}		    
 {{ output.text }}
 {% endhighlight %}
-		    
+{% endif %}
+
 {% for outputitem in output.data %}
 		    
 {% if outputitem[0] contains "image/" %}
 <img src="data:{{outputitem[0]}};base64, {{ outputitem[1] }}">
 {% endif %}
 
-
+{% if outputitem[0] contains "text/plain" %}
+{{ outputitem[0].text/plain }}
+{% endif %}
 		    
 {% endfor %}
 
