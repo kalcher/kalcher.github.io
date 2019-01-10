@@ -172,8 +172,10 @@ layout: default
 
 {% for output in cell.outputs  %}
 
+{% highlight plaintext %}		    
 {{ output.text }}
-	    
+{% endhighlight %}
+		    
 {% for outputitem in output.data %}
 		    
 {% if outputitem[0] contains "image/" %}
